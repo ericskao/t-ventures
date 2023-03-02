@@ -12,7 +12,7 @@
   @media (max-width: sizes.$layout-breakpoint-small) {
     padding: 18px 25px 0 25px;
     order: 1;
-    min-height: calc(100vh - 19px);
+    min-height: calc(100vh - 50px);
   }
 
   &__hamburger {
