@@ -33,6 +33,10 @@ const PageLayout: React.FC<PageLayoutType> = ({ children, title }) => {
   const [navOpen, toggleNav] = useState(false);
 
   useEffect(() => {
+    document.body.style.height = window.innerHeight + 'px';
+  }, []);
+
+  useEffect(() => {
     // for fixing react hydration UI issues (mismatch beteween server side rendering and initial client render)
     setInitialRenderComplete(true);
   }, []);
