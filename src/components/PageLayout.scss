@@ -61,6 +61,7 @@
     font-weight: sizes.$font-heavy;
     margin-bottom: 70px;
     @media (max-width: sizes.$layout-breakpoint-small) {
+      padding-top: 10px;
       margin-bottom: 20px;
       font-size: 34px;
     }
