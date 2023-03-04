@@ -29,8 +29,8 @@ const Home: React.FC<PageProps> = () => {
       setLoading(false);
       setTimeout(() => {
         setShowContent(true);
-      }, 250);
-    }, 4700);
+      }, 100);
+    }, 5600);
   };
 
   return (
