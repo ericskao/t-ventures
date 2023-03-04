@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   animation: animateContainer 3s forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 
   .image-container {
     text-align: center;
@@ -18,7 +18,7 @@
 
   img {
     width: 100%;
-    animation: animateLogo 10s forwards;
+    animation: animateLogo 9s forwards;
   }
 
   @keyframes animateContainer {

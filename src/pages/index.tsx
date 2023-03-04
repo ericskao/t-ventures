@@ -30,7 +30,7 @@ const Home: React.FC<PageProps> = () => {
       setTimeout(() => {
         setShowContent(true);
       }, 100);
-    }, 5600);
+    }, 5300);
   };
 
   return (
