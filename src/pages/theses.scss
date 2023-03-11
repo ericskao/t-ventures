@@ -7,22 +7,21 @@
 
   &__section {
     padding-left: 190px;
+    margin-bottom: 143px;
+
+    &--last-child {
+      margin-bottom: 190px;
+    }
+
+    h3, h2 {
+      display: inline-block;
+    }
+
     @media (max-width: sizes.$layout-breakpoint-small) {
       flex-direction: column;
       padding-left: 0;
-    }
-  }
-
-  section:not(:last-child) {
-    margin-bottom: 143px;
-
-    @media (max-width: sizes.$layout-breakpoint-small) {
       margin-bottom: 30px;
     }
-  }
-
-  section:last-child {
-    margin-bottom: 190px;
   }
 
   &__key {
@@ -36,6 +35,11 @@
   &__value {
     width: 817px;
     line-height: sizes.$line-height-regular;
+
+    p {
+      display: inline;
+    }
+
     @media (max-width: sizes.$layout-breakpoint-small) {
       width: auto;
     }

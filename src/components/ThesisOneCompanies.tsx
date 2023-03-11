@@ -10,65 +10,82 @@ const ThesisOneCompanies = () => {
       <li className="company">
         <a href="https://www.looker.com/" target="_blank" className="company__logo-container">
           <StaticImage
-            src="../images/companies/Looker.png"
-            alt="looker-logo"
+            src="../images/companies/Looker.svg"
+            alt="Looker"
             placeholder="blurred"
-            width={100}
             className="company__logo"
           />
         </a>
         <CollapsibleContent className="company__description">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
-          </div>
+          <h4>Looker:&nbsp;</h4>
+          <p>
+            In 2012, Amazon Web Services (AWS) had hit its stride. Amazon's cloud data warehouse,
+            Redshift, grew fastest within the vast product suite. With Redshift, customers processed
+            huge quantities of data instantly, ignoring the complexities of managing it, because
+            Amazon did it on their behalf. Competing services from Snowflake, Google BigQuery, and
+            Microsoft Azure enticed more customers to analyze their data in the cloud.
+          </p>
+          <p>
+            But, existing business intelligence tools couldn't handle the data volumes. Architected
+            in a different era when database storage & compute were far more expensive, BI tools
+            ingested data in piecemeal, pre-processed extracts.
+          </p>
+          <p>
+            Cloud data warehouses promised a new capability : to analyze all the data. Summarize
+            upwards & drill-downwards with full resolution.
+          </p>
+          <p>
+            Looker built the first cloud-native business intelligence software. Lloyd Tabb founded
+            the business & invented LookML, a language that empowered someone to define a metric
+            correctly once, for everyone's use. LookML defines metrics once & pushes the individual
+            analyses to the edge of the organization - to the marketing teams & sales teams &
+            customer support teams. Looker's architecture also dovetailed with go-to-market
+            partnerships with the major cloud data warehouses.
+          </p>
+          <p>Google acquired Looker for $2.7b in 2020.</p>
         </CollapsibleContent>
       </li>
       <li className="company">
+        <a href="https://www.dremio.com/" target="_blank" className="company__logo-container">
+          <StaticImage
+            src="../images/companies/Dremio.svg"
+            alt="Dremio"
+            placeholder="blurred"
+            className="company__logo"
+          />
+        </a>
+        <CollapsibleContent className="company__description">
+          <h4>Dremio:&nbsp;</h4>
+          <p>
+            There are 2 different ways to store data for analysis: within a data warehouse or within
+            files. Often, many operational systems produce file after file of data, whether it's
+            telemetry, logs, or operational metrics. Historically, file-based analysis has required
+            specialized tools, learning new languages, & more patience to extract insight.
+          </p>
+          <p>
+            Because of the latency, file-based analysis hasn't been suitable for enterprise BI. It's
+            just too slow for users to wait. But, data lakehouses (file-based storage) scale better
+            than cloud data warehouses for massive data sets. Even more, Data lakehouses'
+            architecture reduces storage needs by 30-50%.
+          </p>
+          <p>
+            Dremio has built a query-engine for interactive data analysis across data lakehouses.
+            Dremio Sonar uses machine-learning to optimize queries across data lakehouses so they
+            are nearly as fast as a cloud data lakehouse. BI tools like Tableau & Microsoft PowerBI
+            work directly with Dremio for interactive analysis.
+          </p>
+          <p>
+            Data teams use Dremio Arctic to manage millions of files, treating them as tables.
+            Arctic simplifies adding columns to many files at once, or changing the format of a
+            field, or forking a data set to empower an analyst to research a question.
+          </p>
+        </CollapsibleContent>
+      </li>
+      {/* <li className="company">
         <a href="https://hex.tech/" target="_blank" className="company__logo-container">
           <StaticImage
-            src="../images/companies/HEX.png"
-            alt="HEX-logo"
+            src="../images/companies/Hex.svg"
+            alt="HEX"
             placeholder="blurred"
             width={80}
             className="company__logo"
@@ -76,220 +93,38 @@ const ThesisOneCompanies = () => {
         </a>
         <CollapsibleContent className="company__description">
           <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
           </div>
         </CollapsibleContent>
-      </li>
-      <li className="company">
-        <a href="https://www.dremio.com/" target="_blank" className="company__logo-container">
-          <StaticImage
-            src="../images/companies/dremio.png"
-            alt="dremio-logo"
-            placeholder="blurred"
-            width={100}
-            className="company__logo"
-          />
-        </a>
-        <CollapsibleContent className="company__description">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
-          </div>
-        </CollapsibleContent>
-      </li>
+      </li> */}
       <li className="company">
         <a href="https://www.exploreomni.com/" target="_blank" className="company__logo-container">
           <StaticImage
-            src="../images/companies/omni.png"
-            alt="omni-logo"
+            src="../images/companies/Omni.svg"
+            alt="Omni"
             placeholder="blurred"
-            className="company__logo"
-            width={100}
-          />
-        </a>
-        <CollapsibleContent className="company__description">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
-          </div>
-        </CollapsibleContent>
-      </li>
-      <li className="company">
-        <a href="https://motherduck.com/" target="_blank" className="company__logo-container">
-          <StaticImage
-            src="../images/companies/mother-duck.png"
-            alt="mother-duck-logo"
-            placeholder="blurred"
-            width={150}
             className="company__logo"
           />
         </a>
-        <CollapsibleContent className="company__description">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
-          </div>
+        <CollapsibleContent shorter className="company__description">
+          <h4>Omni:&nbsp;</h4>
+          <p>
+            Data-modeling defines a metric once for everyone's use within an organization. It
+            prevents data-brawls, the disputes that erupt when debating when is a lead a lead? Or
+            what is the ARR of the business?
+          </p>
+          <p>
+            As teams invest more in data-modeling, the initial model grows unwieldy in size &
+            calcifies because the company adds metrics faster & faster.
+          </p>
+          <p>
+            Founded by executives from Looker & a creator of DBT at Stitch, Omni uses
+            machine-learning to dynamically create & update the data model. A business can start
+            from a clean sheet of paper, building a model by creating metrics within a workspace &
+            then promoting them to the entire company. Alternatively, a data team can define an
+            initial set of metrics that evolve through the life of a company through workflows that
+            ensure the entire business works from the same definitions.
+          </p>
         </CollapsibleContent>
       </li>
       <li className="company">
@@ -300,57 +135,70 @@ const ThesisOneCompanies = () => {
         >
           <StaticImage
             src="../images/companies/MonteCarlo.png"
-            alt="monte-carlo-logo"
+            alt="Monte Carlo Data"
             placeholder="blurred"
-            width={160}
             className="company__logo"
           />
         </a>
         <CollapsibleContent className="company__description">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Sapien eget
-              mi proin sed libero enim sed faucibus turpis. Tellus orci ac auctor augue mauris augue
-              neque gravida in. Vel pharetra vel turpis nunc eget. Ultrices mi tempus imperdiet
-              nulla malesuada pellentesque elit eget. Duis at tellus at urna condimentum mattis.
-              Sagittis nisl rhoncus mattis rhoncus. Quisque sagittis purus sit amet volutpat
-              consequat mauris. Id volutpat lacus laoreet non. Ultrices tincidunt arcu non sodales
-              neque sodales. In nisl nisi scelerisque eu ultrices vitae auctor eu augue.
-            </p>
-            <p>
-              Sollicitudin nibh sit amet commodo. Sapien nec sagittis aliquam malesuada bibendum
-              arcu vitae elementum. Nulla porttitor massa id neque aliquam vestibulum morbi blandit.
-              Cras tincidunt lobortis feugiat vivamus at. Feugiat sed lectus vestibulum mattis
-              ullamcorper. Quam adipiscing vitae proin sagittis nisl rhoncus. Aliquet nec
-              ullamcorper sit amet. Ac tincidunt vitae semper quis lectus nulla at volutpat. Elit
-              eget gravida cum sociis natoque penatibus. Id semper risus in hendrerit gravida. Vel
-              pretium lectus quam id. Elementum eu facilisis sed odio morbi quis commodo odio
-              aenean.
-            </p>
-            <p>
-              Sollicitudin tempor id eu nisl nunc mi. Ut consequat semper viverra nam libero justo
-              laoreet. Quis lectus nulla at volutpat diam ut venenatis. Aliquam malesuada bibendum
-              arcu vitae elementum curabitur. Donec et odio pellentesque diam. Elementum nibh tellus
-              molestie nunc. Tincidunt augue interdum velit euismod in pellentesque massa placerat
-              duis. Blandit massa enim nec dui nunc. Dictum varius duis at consectetur. Venenatis
-              tellus in metus vulputate eu scelerisque felis. At tempor commodo ullamcorper a.
-              Feugiat sed lectus vestibulum mattis ullamcorper. Egestas quis ipsum suspendisse
-              ultrices gravida. Nullam ac tortor vitae purus faucibus ornare.
-            </p>
-            <p>
-              Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Arcu odio ut
-              sem nulla pharetra diam sit amet. Tristique magna sit amet purus gravida quis blandit.
-              Enim sit amet venenatis urna cursus eget nunc scelerisque. Ac auctor augue mauris
-              augue neque gravida. Ultricies tristique nulla aliquet enim. Vivamus arcu felis
-              bibendum ut tristique et. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-              proin. At varius vel pharetra vel turpis nunc. Leo in vitae turpis massa sed elementum
-              tempus egestas sed. Gravida in fermentum et sollicitudin ac. Purus non enim praesent
-              elementum facilisis leo. Justo laoreet sit amet cursus sit amet. Pulvinar elementum
-              integer enim neque volutpat ac tincidunt vitae semper. Vel orci porta non pulvinar
-              neque laoreet suspendisse interdum consectetur.
-            </p>
-          </div>
+          <h4>Monte Carlo:&nbsp;</h4>
+          <p>
+            Insights from data are only as valuable as the confidence the audience has with the
+            data. As more companies invested in data infrastructure during the Decade of Data, data
+            architecture complexity compounded, increasing the risk of inaccurate data & unavailable
+            data - known as Data Downtime.
+          </p>
+          <p>
+            Software engineers use observability systems to identify issues within their
+            environments : when servers misbehave or applications stall. These systems fall into two
+            categories: test-based systems where engineers write tests to validate behavior &
+            observability systems which watch for unusual patterns.
+          </p>
+          <p>
+            But no analogous product for data infrastructure systems - which often process
+            significantly more data - existed.
+          </p>
+          <p>
+            Monte Carlo Data solves Data Downtime with its data observability platform. Barr Moses &
+            Lior Gavish founded Monte Carlo Data which uses machine learning to benchmark data
+            behaviors & identify anomalies within data pipelines. Monte Carlo ensures that the data
+            used in the boardroom, on a television broadcast, or a production machine-learning
+            system is trustworthy.
+          </p>
+        </CollapsibleContent>
+      </li>
+      <li className="company">
+        <a href="https://motherduck.com/" target="_blank" className="company__logo-container">
+          <StaticImage
+            src="../images/companies/MotherDuck.svg"
+            alt="MotherDuck"
+            placeholder="blurred"
+            className="company__logo"
+          />
+        </a>
+        <CollapsibleContent className="company__description" shorter>
+          <h4>MotherDuck:&nbsp;</h4>
+          <p>
+            Cloud data warehouse architectures offer maximum scale, solving problems for the very
+            largest data sets with scale-out architecture. Need to process more data? Just add
+            machines.
+          </p>
+          <p>
+            But most of the data sets used for analysis are small. These workloads are underserved
+            by cloud data warehouses. In many cases, a laptop is faster than a data warehouse for
+            these workloads. The costs of setting up a new instance inject friction into quick
+            analyses.
+          </p>
+          <p>
+            DuckDB is a serverless database - a database installed in seconds in nearly any
+            environment as a library. DuckDB is also an in-process database which makes it
+            embeddable into web software to accelerate data processing in the browser. It's also
+            fast, up to 80x faster than others.
+          </p>
+          <p>
+            Founded by Jordan Tigani, the original tech lead for Google BigQuery, MotherDuck
+            commercializes DuckDB for analytics workloads.
+          </p>
         </CollapsibleContent>
       </li>
     </>

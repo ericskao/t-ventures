@@ -5,10 +5,21 @@
 
   &__description {
     flex-basis: 817px;
+
+    h4 {
+      display: inline;
+    }
+    p:first-of-type {
+      display: inline;
+      margin-top: 0;
+    }
   }
 
   &__logo-container {
     width: 180px;
+    img {
+      filter: brightness(0) invert(1);
+    }
   }
 
   &__logo {
