@@ -15,7 +15,7 @@ export interface PageLinkType {
 }
 
 const PAGE_LINKS: PageLinkType[] = [
-  { text: 'Story', url: '/story' },
+  // { text: 'Story', url: '/story' },
   { text: 'Theses', url: '/theses' },
   { text: 'Blog', url: '/blog' },
   { text: 'Team', url: '/team' },
@@ -26,9 +26,10 @@ export const linkedInLink = 'https://www.linkedin.com/in/tomasztunguz/';
 interface PageLayoutType {
   children: React.ReactNode;
   title?: string; // PageLayout can take optional title as header for the page
+  pageDescription?: React.ReactNode;
 }
 
-const PageLayout: React.FC<PageLayoutType> = ({ children, title }) => {
+const PageLayout: React.FC<PageLayoutType> = ({ children, title, pageDescription }) => {
   const [initialRenderComplete, setInitialRenderComplete] = useState(false);
   const [navOpen, toggleNav] = useState(false);
 
@@ -60,7 +61,11 @@ const PageLayout: React.FC<PageLayoutType> = ({ children, title }) => {
         </button>
       </header>
       <MobileNavBar links={PAGE_LINKS} open={navOpen} />
-      {title && <h1 className="layout__title">{title}</h1>}
+      <div className="layout__title-container">
+        {title && <h1 className="layout__title">{title}</h1>}
+        {pageDescription && pageDescription}
+      </div>
+
       {children}
       <NavBar links={PAGE_LINKS} />
       <div className="layout__mobile-logo">

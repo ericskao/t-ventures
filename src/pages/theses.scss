@@ -37,7 +37,8 @@
     line-height: sizes.$line-height-regular;
 
     p {
-      display: inline;
+      font-size: sizes.$size-medium;
+      margin: 10px 0 0 0;
     }
 
     @media (max-width: sizes.$layout-breakpoint-small) {
@@ -66,5 +67,11 @@
 
   &__companies {
     margin-top: 60px;
+  }
+
+  &__header {
+    margin-left: 50px;
+    font-size: sizes.$size-regular;
+    margin-bottom: 80px;
   }
 }

@@ -16,13 +16,22 @@ const Theses = () => {
   }, []);
 
   return (
-    <PageLayout title="Theses">
+    <PageLayout
+      title="Theses"
+      pageDescription={
+        <div className="theses__header">
+          Thesis investing is at the core of Theory. It's in our name. We believe researching
+          markets deeply enables us to support founders best. We are constantly researching theses &
+          exploring new ones.
+        </div>
+      }
+    >
       <main className="theses">
         <section className="theses__section">
           <div className="theses__pair">
             <h2 className="theses__key">Thesis 1: </h2>
             <div className="theses__value">
-              <h3>The Decade of Data:&nbsp;</h3>
+              <h3>The Decade of Data:</h3>
               <p>
                 Every company leverages insight from data for competitive advantage. Data must be
                 moved, transformed, analyzed, & observed in novel ways.
@@ -38,10 +47,12 @@ const Theses = () => {
             <div className="theses__pair">
               <h2 className="theses__key">Thesis 2:</h2>
               <div className="theses__value">
-                <h3>Machine Learning as a Force Multiplier:</h3> There are four types of ML:
-                classification, prediction, interpretation, & generation. Each of these fields has
-                witnessed tremendous advances that will percolate into software & unlock massive
-                productivity gains from software.
+                <h3>Machine Learning as a Force Multiplier:</h3>
+                <p>
+                  There are four types of ML: classification, prediction, interpretation, &
+                  generation. Each of these fields has witnessed tremendous advances that will
+                  percolate into software & unlock massive productivity gains from software.
+                </p>
               </div>
             </div>
             <div className="theses__companies">
@@ -54,9 +65,12 @@ const Theses = () => {
             <div className="theses__pair">
               <h2 className="theses__key">Thesis 3:</h2>
               <div className="theses__value">
-                <h3>Blockchains as Databases:</h3> Blockchains are novel databases that enable new
-                ways of building applications that comply with international regulation, enforce
-                digital scarcity, & rigorously guarantee the sanctity of business operations.
+                <h3>Blockchains as Databases:</h3>
+                <p>
+                  Blockchains are novel databases that enable new ways of building applications that
+                  comply with international regulation, enforce digital scarcity, & rigorously
+                  guarantee the sanctity of business operations.
+                </p>
               </div>
             </div>
             <div className="theses__companies">
