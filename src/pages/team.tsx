@@ -39,10 +39,12 @@ const Team = () => {
               className="team__profile"
             />
             <div className="team__profile-info">
-              <h2 className="team__member-name">{member.name}:&nbsp;</h2>
-              {member.description.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))}
+              <h2 className="team__member-name">{member.name}</h2>
+              <p>
+                {member.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </p>
             </div>
           </section>
         ))}

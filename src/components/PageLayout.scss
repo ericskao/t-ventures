@@ -67,13 +67,11 @@
     }
   }
 
-  &__title {
-    @media (max-width: sizes.$layout-breakpoint-small) {
-      order: 3;
-    }
-  }
-
   &__title-container {
     display: flex;
+
+    @media (max-width: sizes.$layout-breakpoint-small) {
+      display: block;
+    }
   }
 }

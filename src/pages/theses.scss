@@ -1,6 +1,7 @@
 @use "../styles/abstracts/sizes";
 
 .theses {
+  margin-bottom: 50px;
   @media (max-width: sizes.$layout-breakpoint-small) {
     order: 3;
   }
@@ -8,10 +9,6 @@
   &__section {
     padding-left: 190px;
     margin-bottom: 143px;
-
-    &--last-child {
-      margin-bottom: 190px;
-    }
 
     h3, h2 {
       display: inline-block;
@@ -73,5 +70,9 @@
     margin-left: 50px;
     font-size: sizes.$size-regular;
     margin-bottom: 80px;
+
+    @media (max-width: sizes.$layout-breakpoint-small) {
+      margin-left: 0;
+    }
   }
 }
