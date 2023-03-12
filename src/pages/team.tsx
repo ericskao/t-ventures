@@ -1,10 +1,11 @@
 import { HeadFC } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import PageLayout from '../components/PageLayout';
 import './team.scss';
 
 interface TeamMemberType {
   name: string;
-  description: string;
+  description: string[];
   imageUrl?: string | null;
 }
 
@@ -12,8 +13,15 @@ interface TeamMemberType {
 const TEAM_MEMBERS: TeamMemberType[] = [
   {
     name: 'Tomasz Tunguz',
-    description:
-      'I have been a venture capitalist for 15 years & founded Theory to partner with companies building novel technology that creates go-to-market advantages in the market. I’m a student of startups’ business models.',
+    description: [
+      'I founded Theory Ventures in 2023 to invest in early-stage startups leveraging technology discontinuities that enable go-to-market advantages.',
+      'As a child, I moved around quite a bit: Belgium, Switzerland, London. I learned English at age 6 in the UK, then moved to the US at age 10. I founded my first business in Chile when I was 17.',
+      'I studied mechanical engineering, machine learning, & business at Dartmouth. I rowed on the crew team & won second place at the US championships in the lightweight 8.',
+      'After graduation, I joined Appian, an early stage software company as a software engineer. Then I moved to California to work at Google in a customer support role, then as a product manager on AdSense ad targeting.',
+      'Next, I started at Redpoint Ventures, where I became managing director leading investments in early stage software & data companies like Looker, Kustomer, Monte Carlo, Spot, Hex, MotherDuck, & Hex.',
+      'I’ve been writing for more than a decade at tomtunguz.com & co-authored Winning with Data with Looker CEO Frank Bien.',
+      'I live in the Bay Area with my wife & 5 children.',
+    ],
     imageUrl: null,
   },
 ];
@@ -24,8 +32,20 @@ const Team = () => {
       <main className="team">
         {TEAM_MEMBERS.map((member, index) => (
           <section key={index} className="team__member">
-            <h2 className="team__member-name">{member.name}:</h2>
-            <h3 className="team__member-description">{member.description}</h3>
+            <StaticImage
+              src="../images/profiles/tomasz_profile.jpeg"
+              alt="Arbitrum"
+              placeholder="blurred"
+              className="team__profile"
+            />
+            <div>
+              <h2 className="team__member-name">{member.name}:&nbsp;</h2>
+              <h3 className="team__member-description">
+                {member.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </h3>
+            </div>
           </section>
         ))}
       </main>
