@@ -16,6 +16,7 @@ const Home: React.FC<PageProps> = () => {
     // if not, show animation
     const animatedBefore = localStorage.getItem('animatedBefore') !== null;
     if (false) {
+      // showing animation all the time for testing
       console.log('not animated before');
       // localStorage.setItem('animatedBefore', 'true');
     } else {
@@ -35,7 +36,7 @@ const Home: React.FC<PageProps> = () => {
 
   return (
     <div className="root">
-      {loading && <LoadingScreen />}
+      <LoadingScreen />
       {showContent && (
         <PageLayout>
           <main className="home">

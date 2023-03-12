@@ -25,10 +25,13 @@
     80% {
       opacity: 0.8;
     }
+    90%{
+      opacity: 0.6;
+    }
     100% {
       width: 15vw;
       height: 20vh;
-      opacity: 0.6;
+      opacity: 0;
     }
   }
 

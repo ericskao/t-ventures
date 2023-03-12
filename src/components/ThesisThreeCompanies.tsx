@@ -67,10 +67,10 @@ const ThesisThreeCompanies = () => {
       <li className="company">
         <a href="https://dune.com/" target="_blank" className="company__logo-container">
           <StaticImage
-            src=""
+            src="../images/companies/Dune.png"
             alt="Dune"
             placeholder="blurred"
-            width={180}
+            width={100}
             className="company__logo"
           />
         </a>
