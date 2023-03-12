@@ -38,13 +38,11 @@ const Team = () => {
               placeholder="blurred"
               className="team__profile"
             />
-            <div>
+            <div className="team__profile-info">
               <h2 className="team__member-name">{member.name}:&nbsp;</h2>
-              <h3 className="team__member-description">
-                {member.description.map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </h3>
+              {member.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
             </div>
           </section>
         ))}
