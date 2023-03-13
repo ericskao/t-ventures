@@ -139,6 +139,7 @@ const ThesisOneCompanies = () => {
             alt="Monte Carlo Data"
             placeholder="blurred"
             className="company__logo"
+            width={90}
           />
         </a>
         <CollapsibleContent className="company__description">

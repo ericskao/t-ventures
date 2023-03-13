@@ -34,8 +34,8 @@
     line-height: sizes.$line-height-regular;
 
     p {
-      font-size: 22px;
-      line-height: sizes.$size-mobile-large;
+      font-size: 26px;
+      line-height: 32px;
       margin: 10px 0 0 0;
     }
 
@@ -68,16 +68,17 @@
   }
 
   &__header {
-    margin-left: 270px;
-    font-size: sizes.$size-regular;
-    margin-bottom: 80px;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 12px 0 80px 270px;
     width: 817px;
+
 
     @media (max-width: sizes.$layout-breakpoint-small) {
       margin-left: 0;
       width: auto;
       font-size: 22px;
-      line-height: 26px;
+      line-height: sizes.$line-height-mobile;
     }
   }
 }
