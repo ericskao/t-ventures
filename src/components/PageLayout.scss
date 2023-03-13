@@ -7,8 +7,6 @@
   flex-direction: column;
   min-height: calc(100vh - 122px);
   padding: 36px 80px 86px 80px;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
 
   // mobile view
   @media (max-width: sizes.$layout-breakpoint-small) {
