@@ -13,6 +13,8 @@
     padding: 18px 25px 0 25px;
     order: 1;
     min-height: calc(100vh - 19px);
+    /* mobile viewport bug fix */
+    // min-height: -webkit-fill-available;
   }
 
   &__hamburger {
