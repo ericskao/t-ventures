@@ -17,7 +17,7 @@
     @media (max-width: sizes.$layout-breakpoint-small) {
       flex-direction: column;
       padding-left: 0;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
     }
   }
 
@@ -34,7 +34,8 @@
     line-height: sizes.$line-height-regular;
 
     p {
-      font-size: sizes.$size-medium;
+      font-size: 22px;
+      line-height: sizes.$size-mobile-large;
       margin: 10px 0 0 0;
     }
 
@@ -74,6 +75,9 @@
 
     @media (max-width: sizes.$layout-breakpoint-small) {
       margin-left: 0;
+      width: auto;
+      font-size: 22px;
+      line-height: 26px;
     }
   }
 }
