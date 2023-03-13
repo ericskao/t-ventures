@@ -14,6 +14,7 @@ const ThesisOneCompanies = () => {
             alt="Looker"
             placeholder="blurred"
             className="company__logo"
+            width={70}
           />
         </a>
         <CollapsibleContent className="company__description">
@@ -174,6 +175,7 @@ const ThesisOneCompanies = () => {
             alt="MotherDuck"
             placeholder="blurred"
             className="company__logo"
+            width={90}
           />
         </a>
         <CollapsibleContent className="company__description" shorter>

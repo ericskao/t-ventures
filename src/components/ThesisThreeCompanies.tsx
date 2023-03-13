@@ -40,6 +40,7 @@ const ThesisThreeCompanies = () => {
             alt="Mysten"
             placeholder="blurred"
             className="company__logo"
+            width={90}
           />
         </a>
         <CollapsibleContent shorter className="company__description">
